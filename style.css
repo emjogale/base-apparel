@@ -1,9 +1,46 @@
-global styles * {
+/*global styles */
+* {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
 
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+
+body {
+	font-family: "Josefin Sans", sans-serif;
+}
+/* grid-conainer styles */
 section {
 	border: 1px solid black;
+	display: grid;
+	grid-template-areas:
+		header
+		img-container
+		text-container;
+}
+
+/* image conainer styles */
+.img-container img {
+	width: 100%;
+}
+
+/* text-container styles */
+.text-container {
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.email::after {
+	content: url(/images/icon-arrow.svg);
+}
+
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
 }
