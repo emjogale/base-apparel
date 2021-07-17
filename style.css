@@ -14,9 +14,20 @@ h1 {
 	font-size: 2rem;
 }
 
+p {
+	font-weight: bolder;
+	font-size: 14px;
+	line-height: 1.2rem;
+}
+
 .red {
 	color: hsl(0, 36%, 70%);
 	font-weight: 300;
+}
+
+.bold {
+	font-weight: 600;
+	color: hsl(0, 6%, 24%);
 }
 /* grid-container styles */
 section {
@@ -29,9 +40,16 @@ section {
 	height: 100vh;
 }
 
+/* header styles */
+
+header img {
+	padding: 0.5rem;
+}
+
 /* image container styles */
 .img-container img {
 	width: 100%;
+	height: auto;
 }
 
 /* text-container styles */
@@ -41,9 +59,18 @@ section {
 	text-align: center;
 }
 
-/* header style */
-header {
-	padding: 1.5rem;
+.text-container h1 {
+	letter-spacing: 0.5rem;
+}
+
+/* email input styles */
+input {
+	width: 100%;
+	border-radius: 2rem;
+	padding: 0.75rem;
+	margin-top: 1rem;
+	color: hsl(0, 6%, 24%);
+	font-family: "Josefin Sans", sans-serif;
 }
 
 .email::after {
