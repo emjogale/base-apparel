@@ -5,13 +5,20 @@
 	box-sizing: border-box;
 }
 
-/* fonts */
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
-
 body {
 	font-family: "Josefin Sans", sans-serif;
+	font-size: 16px;
 }
-/* grid-conainer styles */
+
+h1 {
+	font-size: 2rem;
+}
+
+.red {
+	color: hsl(0, 36%, 70%);
+	font-weight: 300;
+}
+/* grid-container styles */
 section {
 	border: 1px solid black;
 	display: grid;
@@ -19,9 +26,10 @@ section {
 		header
 		img-container
 		text-container;
+	height: 100vh;
 }
 
-/* image conainer styles */
+/* image container styles */
 .img-container img {
 	width: 100%;
 }
@@ -31,6 +39,11 @@ section {
 	width: 80%;
 	margin: 0 auto;
 	text-align: center;
+}
+
+/* header style */
+header {
+	padding: 1.5rem;
 }
 
 .email::after {
