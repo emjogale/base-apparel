@@ -8,6 +8,7 @@
 body {
 	font-family: "Josefin Sans", sans-serif;
 	font-size: 16px;
+	background-image: url(./images/bg-pattern-desktop.svg);
 }
 
 h1 {
@@ -16,12 +17,12 @@ h1 {
 
 p {
 	font-weight: bolder;
-	font-size: 14px;
+	font-size: 0.9rem;
 	line-height: 1.2rem;
 }
 
 .red {
-	color: hsl(0, 36%, 70%);
+	color: hsl(0, 93%, 68%);
 	font-weight: 300;
 }
 
@@ -29,31 +30,43 @@ p {
 	font-weight: 600;
 	color: hsl(0, 6%, 24%);
 }
+
 /* grid-container styles */
-section {
-	border: 1px solid black;
+.container {
 	display: grid;
 	grid-template-areas:
-		header
-		img-container
-		text-container;
+		"header"
+		"img-container"
+		"text-container";
 	height: 100vh;
 }
 
 /* header styles */
-
+header {
+	display: flex;
+	align-items: center;
+	grid-area: header;
+}
 header img {
-	padding: 0.5rem;
+	padding: 0.5rem 0.5rem 0.5rem 1rem;
 }
 
 /* image container styles */
+.img-container {
+	grid-area: img-container;
+}
 .img-container img {
 	width: 100%;
 	height: auto;
 }
 
+.hero-desktop {
+	display: none;
+}
+
 /* text-container styles */
 .text-container {
+	grid-area: text-container;
 	width: 80%;
 	margin: 0 auto;
 	text-align: center;
@@ -62,8 +75,14 @@ header img {
 .text-container h1 {
 	letter-spacing: 0.5rem;
 }
-
+/* footer styles */
+footer {
+	grid-area: footer;
+}
 /* email input styles */
+.email {
+	position: relative;
+}
 input {
 	width: 100%;
 	border-radius: 2rem;
@@ -71,10 +90,53 @@ input {
 	margin-top: 1rem;
 	color: hsl(0, 6%, 24%);
 	font-family: "Josefin Sans", sans-serif;
+	border: 1px solid hsl(0, 6%, 24%);
 }
 
 .email::after {
 	content: url(/images/icon-arrow.svg);
+	background-color: hsl(0, 93%, 68%);
+	position: absolute;
+	right: 0;
+	bottom: 0.9rem;
+	padding: 0.5rem 1.5rem;
+	border-radius: 2rem;
+}
+
+@media only screen and (min-width: 1025px) {
+	.hero-mobile {
+		display: none;
+	}
+	.hero-desktop {
+		display: block;
+	}
+
+	.container {
+		width: 80%;
+		height: auto;
+		text-align: center;
+		align-items: center;
+		margin-top: 2rem;
+		grid-template-areas:
+			"header img-container"
+			"text-container img-container"
+			"footer img-container";
+	}
+	.text-container {
+		width: 60%;
+		text-align: left;
+		margin: 3rem auto 2rem 1rem;
+	}
+
+	.text-container h1 {
+		font-size: 4rem;
+		margin-top: 2rem;
+	}
+
+	p {
+		font-size: 1.1rem;
+		padding: 2rem 0 3rem 0;
+	}
 }
 
 .attribution {
