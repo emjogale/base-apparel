@@ -73,7 +73,7 @@ header img {
 }
 
 .text-container h1 {
-	letter-spacing: 0.5rem;
+	letter-spacing: 1.4rem;
 }
 /* footer styles */
 footer {
@@ -86,22 +86,12 @@ footer {
 input {
 	width: 100%;
 	border-radius: 2rem;
-	padding: 0.75rem;
+	padding: 1rem;
 	margin-top: 1rem;
 	color: hsl(0, 6%, 24%);
 	font-family: "Josefin Sans", sans-serif;
 	border: 1px solid hsl(0, 6%, 24%);
 }
-
-/* .email::after {
-	content: url(/images/icon-arrow.svg);
-	background-color: hsl(0, 93%, 68%);
-	position: absolute;
-	right: 0;
-	bottom: 0.95rem;
-	padding: 0.5rem 1.5rem;
-	border-radius: 2rem;
-} */
 
 #enter {
 	background: linear-gradient(
@@ -113,14 +103,14 @@ input {
 	position: absolute;
 	right: 0;
 	bottom: 0;
-	padding: 0.45rem 1.5rem;
+	padding: 0.7rem 1.5rem;
 	border-radius: 2rem;
 	border: 1px solid hsl(0, 93%, 68%);
 }
 
 #enter:hover {
-	transform: scale(1.2);
-	background: hsl(0, 80%, 76%);
+	padding: 0.8rem 2rem;
+	background: hsl(0, 84%, 80%);
 	border: transparent;
 }
 
@@ -133,8 +123,7 @@ input {
 	}
 
 	.container {
-		width: 80%;
-		height: auto;
+		padding-left: 10%;
 		text-align: center;
 		align-items: center;
 		margin-top: 2rem;
@@ -143,15 +132,24 @@ input {
 			"text-container img-container"
 			"footer img-container";
 	}
+
+	.img-container {
+		height: 100%;
+	}
+
+	.img-container img {
+		height: 100%;
+		width: auto;
+	}
 	.text-container {
 		width: 60%;
 		text-align: left;
-		margin: 3rem auto 2rem 1rem;
+		margin: 4rem auto 2rem 1rem;
 	}
 
 	.text-container h1 {
 		font-size: 4rem;
-		margin-top: 2rem;
+		margin-top: 4rem;
 	}
 
 	p {
