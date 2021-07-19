@@ -93,7 +93,7 @@ input {
 	border: 1px solid hsl(0, 6%, 24%);
 }
 
-.email::after {
+/* .email::after {
 	content: url(/images/icon-arrow.svg);
 	background-color: hsl(0, 93%, 68%);
 	position: absolute;
@@ -101,6 +101,27 @@ input {
 	bottom: 0.95rem;
 	padding: 0.5rem 1.5rem;
 	border-radius: 2rem;
+} */
+
+#enter {
+	background: linear-gradient(
+		0.25turn,
+		hsl(0, 79%, 74%),
+		60%,
+		hsl(0, 93%, 68%)
+	);
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	padding: 0.45rem 1.5rem;
+	border-radius: 2rem;
+	border: 1px solid hsl(0, 93%, 68%);
+}
+
+#enter:hover {
+	transform: scale(1.2);
+	background: hsl(0, 80%, 76%);
+	border: transparent;
 }
 
 @media only screen and (min-width: 1025px) {
@@ -136,6 +157,7 @@ input {
 	p {
 		font-size: 1.1rem;
 		padding: 2rem 0 3rem 0;
+		line-height: 2rem;
 	}
 }
 
