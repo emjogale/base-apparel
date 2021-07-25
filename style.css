@@ -109,7 +109,7 @@ input {
 	);
 	position: absolute;
 	right: 0;
-	bottom: 0;
+	top: 1rem;
 	padding: 0.45rem 1.3rem;
 	border-radius: 2rem;
 	border: 1px solid hsl(0, 93%, 68%);
@@ -122,6 +122,17 @@ input {
 	cursor: pointer;
 }
 
+#error-alert {
+	position: absolute;
+	top: 1.5rem;
+	right: 5rem;
+	display: none;
+}
+
+p.error {
+	padding: 5px 0.5rem;
+	text-align: ;
+}
 @media only screen and (min-width: 1025px) {
 	.hero-mobile {
 		display: none;
