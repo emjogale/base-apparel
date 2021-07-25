@@ -71,8 +71,11 @@ header img {
 .text-container {
 	grid-area: text-container;
 	max-width: 70%;
-	margin: 0.5rem auto;
+	margin: 0.5rem auto 0 auto;
 	text-align: center;
+	padding-bottom: 0;
+	display: flex;
+	flex-direction: column;
 }
 
 .text-container h1 {
