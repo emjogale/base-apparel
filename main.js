@@ -19,10 +19,6 @@ const checkInput = (e) => {
 		e.preventDefault();
 	} else {
 		console.log("not a correct email address");
-		// const err = document.createElement("p");
-		// err.innerHTML = "Please provide a valid email";
-		// err.style.color = "red";
-		// email.appendChild(err);
 		error.innerHTML = "Please provide a valid email";
 		error.style.color = "red";
 		errorAlert.style.display = "block";
