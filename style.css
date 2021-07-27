@@ -79,8 +79,8 @@ header img {
 }
 
 .text-container h1 {
-	letter-spacing: 1rem;
-	margin-bottom: 1.2rem;
+	letter-spacing: 0.8rem;
+	margin-bottom: 1rem;
 }
 /* footer styles */
 footer {
@@ -145,13 +145,16 @@ p.error {
 		padding-left: 10%;
 		text-align: center;
 		align-items: center;
-		margin-top: 2rem;
 		grid-template-areas:
 			"header img-container"
 			"text-container img-container"
 			"footer img-container";
+		width: 100%;
+		height: auto;
 	}
-
+	header {
+		margin-top: 2rem;
+	}
 	.img-container {
 		height: 100%;
 	}
@@ -169,6 +172,8 @@ p.error {
 	.text-container h1 {
 		font-size: 4rem;
 		margin-top: 4rem;
+		letter-spacing: 1rem;
+		margin-bottom: 1.2rem;
 	}
 
 	p {
