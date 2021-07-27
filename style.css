@@ -142,7 +142,7 @@ p.error {
 	}
 
 	.container {
-		padding-left: 10%;
+		padding-left: 2rem;
 		text-align: center;
 		align-items: center;
 		grid-template-areas:
