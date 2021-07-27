@@ -26,6 +26,7 @@ const checkInput = (e) => {
 		error.innerHTML = "Please provide a valid email";
 		error.style.color = "red";
 		errorAlert.style.display = "block";
+		e.preventDefault();
 	}
 };
 form.addEventListener("submit", checkInput);
