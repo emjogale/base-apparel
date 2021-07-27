@@ -1,5 +1,5 @@
-const enter = document.getElementById("enter");
-console.log(enter);
+const form = document.querySelector(".email");
+console.log(form);
 const input = document.querySelector("input");
 console.log(input);
 const email = document.querySelector(".email");
@@ -11,12 +11,12 @@ console.log(errorAlert);
 // function emailIsValid (email) {
 //   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
 // }
-const checkInput = () => {
-	console.log(input.value);
+const checkInput = (e) => {
 	if (/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(input.value)) {
 		console.log("it's a correct email!!");
 		errorAlert.style.display = "none";
 		error.innerHTML = "";
+		e.preventDefault();
 	} else {
 		console.log("not a correct email address");
 		// const err = document.createElement("p");
@@ -28,4 +28,4 @@ const checkInput = () => {
 		errorAlert.style.display = "block";
 	}
 };
-enter.addEventListener("click", checkInput);
+form.addEventListener("submit", checkInput);
