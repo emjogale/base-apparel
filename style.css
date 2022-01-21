@@ -101,23 +101,18 @@ input {
 }
 
 #enter {
-	background: linear-gradient(
-		0.25turn,
-		hsl(0, 80%, 80%),
-		60%,
-		hsl(0, 93%, 68%)
-	);
+	background: linear-gradient(135deg, #f8bfbf 0%, #ee8b8b 100%);
 	position: absolute;
 	right: 0;
 	top: 1rem;
 	padding: 0.45rem 1.3rem;
-	border-radius: 2rem;
-	border: 1px solid hsl(0, 93%, 68%);
+	border-radius: 44px;
+	border: 1px solid transparent;
 }
 
 #enter:hover {
-	padding: 0.6rem 1.6rem;
-	background: hsl(0, 82%, 82%);
+	box-shadow: 0px 15px 20px hsl(0, 84%, 80%);
+	background: hsl(0, 84%, 85%);
 	border: transparent;
 	cursor: pointer;
 }
@@ -188,13 +183,6 @@ p.error {
 
 	#enter {
 		padding: 0.7rem 1.75rem;
-	}
-
-	#enter:hover {
-		padding: 0.8rem 2.5rem;
-		background: hsl(0, 84%, 80%);
-		border: transparent;
-		cursor: pointer;
 	}
 }
 
