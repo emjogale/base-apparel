@@ -142,7 +142,7 @@ p.error {
 	}
 
 	.container {
-		padding-left: 3rem;
+		padding-left: 7rem;
 		text-align: center;
 		align-items: center;
 		grid-template-areas:
@@ -164,7 +164,7 @@ p.error {
 		width: auto;
 	}
 	.text-container {
-		width: 60%;
+		width: 65%;
 		text-align: left;
 		margin: 3rem auto 2rem 1rem;
 	}
